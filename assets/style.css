@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     background-color: cadetblue;
-    clip-path: polygon(100% 100%, 100% 1%, 10% 100%, 0 100%, 0% 78%);
+    clip-path: polygon(100% 100%, 100% 1%, 0% 100%, 0 100%, 0% 78%);
     position: absolute;
     z-index: -1;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -20,6 +20,58 @@ img {
     height: 100%;
 }
 
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+#work img{
+    height: 80%;
+}
+
+/* Base Divider class */
+.divider {
+  display: flex;
+}
+
+.divider::before {
+    content: "";
+    flex: 1;
+}
+
+.divider::after {
+    content: "";
+    flex: 1;
+}
+
+/* // Base line */
+.line {
+  align-items: center;
+  margin: 1em -1em;
+}
+
+.line::before {
+    height: 1px;
+    margin: 0 1em;
+}
+
+.line::after {
+    height: 1px;
+    margin: 0 1em;
+}
+
+.glow::before {
+      -webkit-filter: blur(5px);
+      border-radius: 5px;
+      background: linear-gradient(to right, blue, rgb(14, 41, 129));
+    }
+
+/* .glow::after {
+    -webkit-filter: blur(3px);
+      border-radius: 5px;
+      background: linear-gradient(to left, blue, rgb(14, 41, 129));
+} */
 
 @keyframes gradient {
     0% {

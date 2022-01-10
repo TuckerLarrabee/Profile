@@ -67,11 +67,11 @@ img {
       background: linear-gradient(to right, blue, rgb(14, 41, 129));
     }
 
-/* .glow::after {
+.glow::after {
     -webkit-filter: blur(3px);
       border-radius: 5px;
       background: linear-gradient(to left, blue, rgb(14, 41, 129));
-} */
+}
 
 @keyframes gradient {
     0% {

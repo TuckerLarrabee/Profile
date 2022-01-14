@@ -1,33 +1,41 @@
 #bg {
-    height: 100%;
-    width: 100%;
-    background-color: cadetblue;
-    clip-path: polygon(100% 100%, 100% 1%, 0% 100%, 0 100%, 0% 78%);
-    position: absolute;
-    z-index: -1;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  height: 100%;
+  width: 100%;
+  background-color: cadetblue;
+  clip-path: polygon(100% 100%, 100% 1%, 0% 100%, 0 100%, 0% 78%);
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease-in-out infinite;
 }
 
 img {
-    box-shadow: 5px 10px 25px rgba(68, 3, 3, 0.85);
+  box-shadow: 5px 10px 25px rgba(68, 3, 3, 0.85);
   border-radius: 25px;
 }
 
 #pic {
-    text-align: center;
-    height: 100%;
+  text-align: center;
+  height: 100%;
 }
 
 #work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-#work img{
-    height: 80%;
+/* [data-work="workData"] {
+  height: 00px;
+} */
+
+#work img {
+  height: 60%;
+}
+
+#workContainer {
+  height: 100vh;
 }
 
 /* Base Divider class */
@@ -36,13 +44,13 @@ img {
 }
 
 .divider::before {
-    content: "";
-    flex: 1;
+  content: "";
+  flex: 1;
 }
 
 .divider::after {
-    content: "";
-    flex: 1;
+  content: "";
+  flex: 1;
 }
 
 /* // Base line */
@@ -52,35 +60,35 @@ img {
 }
 
 .line::before {
-    height: 1px;
-    margin: 0 1em;
+  height: 1px;
+  margin: 0 1em;
 }
 
 .line::after {
-    height: 1px;
-    margin: 0 1em;
+  height: 1px;
+  margin: 0 1em;
 }
 
 .glow::before {
-      -webkit-filter: blur(5px);
-      border-radius: 5px;
-      background: linear-gradient(to right, blue, rgb(14, 41, 129));
-    }
+  -webkit-filter: blur(5px);
+  border-radius: 5px;
+  background: linear-gradient(to right, blue, rgb(14, 41, 129));
+}
 
 .glow::after {
-    -webkit-filter: blur(3px);
-      border-radius: 5px;
-      background: linear-gradient(to left, blue, rgb(14, 41, 129));
+  -webkit-filter: blur(3px);
+  border-radius: 5px;
+  background: linear-gradient(to left, blue, rgb(14, 41, 129));
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

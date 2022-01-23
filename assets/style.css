@@ -124,6 +124,12 @@ img {
   text-decoration: none;
 }
 
+.bio-cont {
+  height: 88vh;
+  display: flex;
+  align-items: center;
+}
+
 
 @keyframes gradient {
   0% {
